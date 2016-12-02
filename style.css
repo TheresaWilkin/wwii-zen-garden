@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Oswald|Sigmar+One|Oleo+Script');
+
+/*Black: #191d0f*/
+/*Tan: #e9c38b*/
+/*Red: #d5250c*/
+/*Blue: #192b4a*/
+/*Taupe: #aa9c75*/
+
+
+@media only screen and (min-width:500px) {
+	.page-wrapper {
+		display:grid;
+		grid-template-rows:auto auto;
+		grid-template-colums:repeat(9, auto);
+		grid-template-areas:
+		"intro intro intro intro intro intro intro intro intro"
+		"sidebar sidebar main main main main main main main";
+	}
+
+	.intro {
+		grid-row-start:1;
+		grid-row-end:2;
+		grid-column-start:1;
+		grid-column-end:10;
+	}
+
+	.sidebar {
+		grid-row-start:2;
+		grid-row-end:3;
+		grid-column-start:1;
+		grid-column-end:3;
+	}
+
+	.main {
+		grid-row-start:2;
+		grid-row-end:3;
+		grid-column-start:3;
+		grid-column-end:10;
+	}
+
+	.intro {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	h2 {
+		font-size: 8vw;
+		align-self: flex-start;
+	}
+
+
+}
+
+body {
+	box-sizing: border-box;
+	background-color: #e9c38b;
+	font-family: 'Sigmar One', cursive;
+	text-align: center;
+}
+
+a {
+font-family: 'Oleo Script', cursive;		
+font-size: 1em;
+	color: #192b4a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d5250c;
+}
+.page-wrapper {
+	margin: 40px;
+	box-shadow: 
+	0 0 0 10px #192b4a,
+	0 0 0 20px #e9c38b,
+	0 0 0 30px #d5250c;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+h2 {
+	color: #d5250c;
+	font-size: 5vw;
+}
+
+h3 {
+	color: #191d0f;
+}
+
+p {
+	color: #191d0f;
+	font-family: 'Oswald', sans-serif;
+}
+
+.summary p {
+font-family: 'Oleo Script', cursive;		
+font-size: 1em;
+	}
+
+.intro h1 {
+	content: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/1944_JonWhitcomb_USNavy_(3214638694).jpg');
+	width: 100%;
+}
+
+.sidebar {
+	background-color: #aa9c75;
+	font-size: .75em;
+	padding: 1em;
+	margin: 2em;
+	text-align: left;
+}
+
+
+li {
+	list-style: none;
+	font-family: 'Oleo Script', cursive;		
+font-size: 1em;
+
+}
+
+footer {
+font-family: 'Oleo Script', cursive;		
+font-size: 1em;
+}
+/*font-family: 'Amaranth', sans-serif;*/
